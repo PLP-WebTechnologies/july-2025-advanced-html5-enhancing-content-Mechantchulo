@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,77 +10,145 @@
 <header>
     <h1>Community Event Registration</h1>
     <p>Join our annual community event filled with activities, networking, and fun!</p>
-  </header>
+</header>
 
 <body>
 
     <main>
 
-            <!-- Section: Event Highlights -->
-    <section>
-      <h2>Event Highlights</h2>
-      <ul>
-        <li>Guest speakers from various industries</li>
-        <li>Interactive workshops and demonstrations</li>
-        <li>Live music performances</li>
-        <li>Networking opportunities with professionals</li>
-      </ul>
-    </section>
+        <!-- Section: Event Highlights -->
+        <section>
+            <h2>Event Highlights</h2>
+            <ul>
+                <li>Guest speakers from various industries</li>
+                <li>Interactive workshops and demonstrations</li>
+                <li>Live music performances</li>
+                <li>Networking opportunities with professionals</li>
+            </ul>
+        </section>
 
-    <!-- Section: Schedule Table -->
-    <section>
-      <h2>Event Schedule</h2>
-      <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Activity</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>09:00 AM</td>
-            <td>Registration & Welcome</td>
-            <td>Main Hall</td>
-          </tr>
-          <tr>
-            <td>10:00 AM</td>
-            <td>Keynote Speech</td>
-            <td>Conference Room A</td>
-          </tr>
-          <tr>
-            <td>12:30 PM</td>
-            <td>Lunch & Networking</td>
-            <td>Outdoor Garden</td>
-          </tr>
-          <tr>
-            <td>02:00 PM</td>
-            <td>Workshops</td>
-            <td>Breakout Rooms</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <!-- Section: Schedule Table -->
+        <section>
+            <h2>Event Schedule</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td>Registration & Welcome</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Keynote Speech</td>
+                        <td>Conference Room A</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 PM</td>
+                        <td>Lunch & Networking</td>
+                        <td>Outdoor Garden</td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM</td>
+                        <td>Workshops</td>
+                        <td>Breakout Rooms</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <!-- Section: Media -->
-    <section>
-      <h2>Gallery</h2>
-      <figure>
-        <img src="https://i.pinimg.com/1200x/28/3c/e2/283ce268d8d88cb8bec841caadedff96.jpg" alt="Crowd enjoying the event">
-        <figcaption>Participants enjoying last year’s music performance.</figcaption>
-      </figure>
-      <figure>
-        <video controls width="600">
-          <source src="vid1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>Highlights from last year’s workshops.</figcaption>
-      </figure>
-    </section>
+        <!-- Section: Media -->
+        <section>
+            <h2>Gallery</h2>
+            <figure>
+                <img src="https://i.pinimg.com/1200x/28/3c/e2/283ce268d8d88cb8bec841caadedff96.jpg"
+                    alt="Crowd enjoying the event">
+                <figcaption>Participants enjoying last year’s music performance.</figcaption>
+            </figure>
+            <figure>
+                <video controls width="600">
+                    <source src="vid1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Highlights from last year’s workshops.</figcaption>
+            </figure>
+        </section>
 
+        <!-- Section: Registration Form -->
+        <section>
+            <h2>Register for the Event</h2>
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Erick Mutua" required
+                        minlength="3"><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="erick@gmail.com" required><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 712 345678" pattern="^\+?\d{10,15}$"
+                        required><br><br>
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event Preferences</legend>
+
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country" required>
+                        <option value="">--Select your country--</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="tanzania">Tanzania</option>
+                    </select><br><br>
+
+                    <span>Gender:</span><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+
+                    <span>Interests:</span><br>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">Technology</label><br>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label><br>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other Details</legend>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" placeholder="Tell us more..." rows="4"></textarea><br><br>
+
+                    <label for="memberid">Membership ID (Read-only):</label><br>
+                    <input type="text" id="memberid" name="memberid" value="AUTO12345" readonly><br><br>
+
+                    <label for="website">Your Website:</label><br>
+                    <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+                </fieldset>
+
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
 
     </main>
-    
+
 </body>
+
 </html>
